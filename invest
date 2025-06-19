@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ethnik Art - Investasi Kenangan Bernilai</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Poppins', sans-serif; background-color: #111827; } /* Latar belakang gelap */
+        h1, h2, h3, .font-lora { font-family: 'Lora', serif; }
+        .gold-accent { color: #D4AF37; }
+        .scroll-reveal { opacity: 0; transform: translateY(30px); transition: opacity 0.8s ease-out, transform 0.6s ease-out; }
+        .scroll-reveal.is-visible { opacity: 1; transform: translateY(0); }
+    </style>
+</head>
+<body class="bg-slate-900 text-white">
+
+    <header id="main-header" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold font-lora text-white">Ethnik Art <span class="gold-accent">Legacy</span></a>
+            <nav class="hidden md:flex space-x-8 text-sm font-semibold uppercase tracking-wider">
+                 <a href="#konsep" class="text-slate-300 hover:gold-accent transition-colors">Konsep</a>
+                <a href="#keamanan" class="text-slate-300 hover:gold-accent transition-colors">Keamanan</a>
+                <a href="#kontak" class="text-slate-300 hover:gold-accent transition-colors">Konsultasi</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="pt-32 pb-16">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="grid lg:grid-cols-12 lg:gap-16 lg:items-center">
+                    <div class="lg:col-span-7 text-center lg:text-left">
+                        <h1 class="text-4xl md:text-6xl font-bold tracking-tight text-white scroll-reveal">
+                            <span class="block">Bukan Sekadar Kenangan,</span>
+                            <span class="block mt-2">Ini Adalah <span class="gold-accent">Warisan Bernilai.</span></span>
+                        </h1>
+                        <p class="mt-6 text-lg text-slate-300 max-w-lg mx-auto lg:mx-0 scroll-reveal" style="transition-delay: 200ms;">
+                           Ethnik Art memperkenalkan cara baru mengabadikan momen: sebuah karya seni personal yang nilainya terus bertumbuh, berkat emas murni 24 karat di dalamnya.
+                        </p>
+                        <div class="mt-8 flex gap-4 justify-center lg:justify-start scroll-reveal" style="transition-delay: 400ms;">
+                            <a href="#konsep" class="inline-block bg-white text-slate-900 font-semibold px-8 py-3 rounded-lg shadow-lg hover:bg-slate-200 transition-transform transform hover:scale-105">Pelajari Konsepnya</a>
+                        </div>
+                    </div>
+                    <div class="mt-12 lg:mt-0 lg:col-span-5 scroll-reveal" style="transition-delay: 300ms;">
+                        <div class="w-full h-full rounded-2xl overflow-hidden shadow-2xl shadow-yellow-500/20">
+                            <img src="https://placehold.co/600x700/1E293B/D4AF37?text=Miniatur\nInvestasi\nAnda" alt="Miniatur Investasi Ethnik Art" class="object-cover w-full h-full">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="konsep" class="py-20 bg-slate-800">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="text-center mb-12">
+                     <h2 class="text-3xl md:text-4xl font-bold text-white font-lora scroll-reveal">Konsep Revolusioner: Investasi Kenangan</h2>
+                    <p class="mt-4 text-lg text-slate-300 max-w-3xl mx-auto scroll-reveal" style="transition-delay: 200ms;">Kami menggabungkan dua hal paling berharga: momen emosional dan aset finansial. Begini cara kerjanya.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+                    <div class="text-center p-6 bg-slate-900 rounded-xl scroll-reveal">
+                        <div class="flex items-center justify-center h-16 w-16 bg-slate-700 rounded-full shadow-md mx-auto ring-1 ring-slate-600"><span class="text-3xl">🎨</span></div>
+                        <h3 class="mt-5 text-xl font-semibold text-white">1. Kustomisasi Karya</h3>
+                        <p class="mt-2 text-slate-400">Pesan miniatur Anda dan pilih paket emas (1, 2, atau 5 gram) yang ingin diinvestasikan.</p>
+                    </div>
+                     <div class="text-center p-6 bg-slate-900 rounded-xl scroll-reveal" style="transition-delay: 150ms;">
+                        <div class="flex items-center justify-center h-16 w-16 bg-slate-700 rounded-full shadow-md mx-auto ring-1 ring-slate-600"><span class="text-3xl">✨</span></div>
+                        <h3 class="mt-5 text-xl font-semibold text-white">2. Penanaman Emas</h3>
+                        <p class="mt-2 text-slate-400">Emas murni 24k bersertifikat Antam kami tanamkan secara aman di dalam alas miniatur.</p>
+                    </div>
+                    <div class="text-center p-6 bg-slate-900 rounded-xl scroll-reveal" style="transition-delay: 300ms;">
+                        <div class="flex items-center justify-center h-16 w-16 bg-slate-700 rounded-full shadow-md mx-auto ring-1 ring-slate-600"><span class="text-3xl">📜</span></div>
+                        <h3 class="mt-5 text-xl font-semibold text-white">3. Sertifikasi Ganda</h3>
+                        <p class="mt-2 text-slate-400">Anda menerima sertifikat keaslian karya seni dan sertifikat resmi emas dari produsennya.</p>
+                    </div>
+                    <div class="text-center p-6 bg-slate-900 rounded-xl scroll-reveal" style="transition-delay: 450ms;">
+                        <div class="flex items-center justify-center h-16 w-16 bg-slate-700 rounded-full shadow-md mx-auto ring-1 ring-slate-600"><span class="text-3xl">📈</span></div>
+                        <h3 class="mt-5 text-xl font-semibold text-white">4. Jaminan Beli Kembali</h3>
+                        <p class="mt-2 text-slate-400">Saat butuh dana, kami siap membeli kembali emas Anda sesuai harga pasar, tanpa merusak miniatur.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        </main>
+    
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        // Skrip untuk Header Sticky
+        const header = document.getElementById('main-header');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                header.classList.add('bg-slate-900/80', 'shadow-lg', 'backdrop-blur-lg');
+            } else {
+                header.classList.remove('bg-slate-900/80', 'shadow-lg', 'backdrop-blur-lg');
+            }
+        });
+
+        // Skrip untuk Animasi saat Scroll
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('is-visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1 });
+        document.querySelectorAll('.scroll-reveal').forEach(el => observer.observe(el));
+    });
+    </script>
+</body>
+</html>
