@@ -4,105 +4,172 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ethnik Art - Karya Seni Kenangan Personal</title>
+    
     <script src="https://cdn.tailwindcss.com"></script>
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
     <style>
-        body { font-family: 'Poppins', sans-serif; }
-        h1, h2, h3, .font-lora { font-family: 'Lora', serif; }
-        .gradient-text {
-            background-image: linear-gradient(to right, #6d4c41, #a1887f);
-            -webkit-background-clip: text; background-clip: text; color: transparent;
+        body { 
+            font-family: 'Poppins', sans-serif; 
+            background-color: #111827; /* Latar belakang utama: abu-abu gelap/hitam */
         }
+        h1, h2, h3, .font-lora { 
+            font-family: 'Lora', serif; 
+        }
+        .gold-accent { 
+            color: #D4AF37; /* Warna aksen emas */
+        }
+        /* Kelas untuk animasi saat scroll */
         .scroll-reveal {
             opacity: 0;
-            transform: translateY(30px);
-            transition: opacity 0.8s ease-out, transform 0.6s ease-out;
+            transform: translateY(40px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
         }
         .scroll-reveal.is-visible {
             opacity: 1;
             transform: translateY(0);
         }
+        /* Styling untuk step proses yang aktif */
+        .process-step.active h3 {
+            color: #D4AF37;
+        }
     </style>
 </head>
-<body class="bg-stone-50 text-stone-800">
+<body class="bg-slate-900 text-white">
 
     <header id="main-header" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300">
         <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="#" class="text-2xl font-bold font-lora text-slate-800 transition-colors">Ethnik Art</a>
+            <a href="#" class="text-2xl font-bold font-lora text-white">Ethnik Art</a>
             <nav class="hidden md:flex space-x-8 text-sm font-semibold uppercase tracking-wider">
-                <a href="#tentang" class="text-slate-600 hover:text-indigo-700 transition-colors">Tentang</a>
-                <a href="#galeri" class="text-slate-600 hover:text-indigo-700 transition-colors">Galeri</a>
-                <a href="#proses" class="text-slate-600 hover:text-indigo-700 transition-colors">Proses</a>
-                <a href="#kontak" class="text-slate-600 hover:text-indigo-700 transition-colors">Kontak</a>
+                <a href="#proses" class="text-slate-300 hover:gold-accent transition-colors">Proses Kami</a>
+                <a href="#galeri" class="text-slate-300 hover:gold-accent transition-colors">Galeri</a>
+                <a href="#testimoni" class="text-slate-300 hover:gold-accent transition-colors">Testimoni</a>
+                <a href="#kontak" class="text-slate-300 hover:gold-accent transition-colors">Pesan Sekarang</a>
             </nav>
         </div>
     </header>
 
     <main>
-        <section class="bg-white pt-32 pb-16">
-            <div class="max-w-7xl mx-auto px-6">
+        <section class="relative pt-32 pb-16 overflow-hidden">
+             <div class="absolute inset-0 bg-gradient-to-b from-slate-900 to-slate-800"></div>
+             <div class="relative max-w-7xl mx-auto px-6">
                 <div class="grid lg:grid-cols-12 lg:gap-16 lg:items-center">
                     <div class="lg:col-span-7 text-center lg:text-left">
-                        <h1 class="text-4xl md:text-6xl font-bold tracking-tight scroll-reveal">
+                        <h1 class="text-4xl md:text-6xl font-bold tracking-tight text-white scroll-reveal">
                             <span class="block">Bekukan Momen,</span>
-                            <span class="block gradient-text mt-2">Abadikan Cerita Anda.</span>
+                            <span class="block gold-accent mt-2">Abadikan Cerita Anda.</span>
                         </h1>
-                        <p class="mt-6 text-lg text-stone-600 max-w-lg mx-auto lg:mx-0 scroll-reveal" style="transition-delay: 200ms;">
+                        <p class="mt-6 text-lg text-slate-300 max-w-lg mx-auto lg:mx-0 scroll-reveal" style="transition-delay: 200ms;">
                             Kami mengubah kenangan paling berharga dalam hidup Anda—pernikahan, wisuda, momen keluarga—menjadi sebuah karya seni miniatur 3D yang personal dan abadi.
                         </p>
                         <div class="mt-8 flex gap-4 justify-center lg:justify-start scroll-reveal" style="transition-delay: 400ms;">
-                            <a href="#kontak" class="inline-block bg-slate-800 text-white font-semibold px-8 py-3 rounded-lg shadow-lg hover:bg-slate-700 transition-transform transform hover:scale-105">Mulai Cerita Anda</a>
+                            <a href="#kontak" class="inline-block bg-white text-slate-900 font-semibold px-8 py-3 rounded-lg shadow-lg hover:bg-slate-200 transition-transform transform hover:scale-105">Pesan Karya Anda</a>
                         </div>
                     </div>
                     <div class="mt-12 lg:mt-0 lg:col-span-5 scroll-reveal" style="transition-delay: 300ms;">
-                        <div class="w-full h-full rounded-2xl overflow-hidden shadow-2xl"><img src="https://placehold.co/600x700/D2B48C/3D2B1F?text=Miniatur\nPernikahan\nAdat+Jawa" alt="Contoh Miniatur Pernikahan Ethnik Art" class="object-cover w-full h-full"></div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="tentang" class="py-20 bg-stone-50">
-            <div class="max-w-3xl mx-auto text-center px-6">
-                <h2 class="text-3xl md:text-4xl font-bold text-stone-900 font-lora scroll-reveal">Pusaka Modern dari Tangan Seniman</h2>
-                <p class="mt-4 text-lg text-stone-600 leading-relaxed scroll-reveal" style="transition-delay: 200ms;">
-                    Ethnik Art lahir dari keyakinan bahwa kenangan terbaik layak diabadikan dengan cara yang istimewa. Kami bukan pabrik, kami adalah studio seni. Setiap karya yang kami ciptakan melalui proses yang teliti, memadukan teknologi presisi dengan sentuhan jiwa dan keahlian tangan seniman untuk menangkap esensi dari setiap individu.
-                </p>
-            </div>
-        </section>
-
-        <section id="galeri" class="py-20 bg-white">
-            <div class="max-w-7xl mx-auto px-6">
-                <div class="text-center mb-12">
-                    <h2 class="text-3xl md:text-4xl font-bold text-stone-900 font-lora scroll-reveal">Galeri Karya Ethnik Art</h2>
-                    <p class="mt-4 text-lg text-stone-600 scroll-reveal" style="transition-delay: 200ms;">Beberapa cerita yang telah kami bantu abadikan. Klik untuk melihat detail.</p>
-                </div>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <div class="gallery-item group relative overflow-hidden rounded-xl shadow-lg cursor-pointer scroll-reveal">
-                        <img src="https://placehold.co/600x800/EAE3D8/4D4D4D?text=Janji+Suci" alt="Miniatur Janji Suci Pernikahan" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
-                        <div class="absolute bottom-0 left-0 p-6">
-                            <h3 class="gallery-title text-2xl font-bold text-white font-lora">Janji Suci Pernikahan</h3>
-                            <p class="gallery-desc text-white/80 mt-1">Miniatur pasangan dengan busana adat Jawa.</p>
+                        <div class="w-full h-full rounded-2xl overflow-hidden shadow-2xl shadow-yellow-500/10">
+                            <img src="https://placehold.co/600x700/1E293B/D4AF37?text=Karya+Seni\nPersonal\nAnda" alt="Contoh Miniatur Pernikahan Ethnik Art" class="object-cover w-full h-full">
                         </div>
                     </div>
-                    </div>
+                </div>
             </div>
         </section>
-        
-        </main>
 
-    <div id="lightbox" class="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 flex items-center justify-center p-4 hidden opacity-0 transition-opacity duration-300">
-        <div id="lightbox-content" class="relative bg-white rounded-lg shadow-2xl max-w-3xl w-full transform scale-95 transition-transform duration-300">
-            <img id="lightbox-img" src="" alt="Detail Karya Ethnik Art" class="w-full h-auto max-h-[80vh] object-contain rounded-t-lg">
-            <div class="p-6">
-                <h3 id="lightbox-title" class="text-2xl font-bold font-lora text-stone-900"></h3>
-                <p id="lightbox-desc" class="mt-2 text-stone-600"></p>
+        <section id="proses" class="py-20 bg-slate-800">
+            <div class="max-w-7xl mx-auto px-6">
+                 <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold text-white font-lora scroll-reveal">Proses Lahirnya Sebuah Mahakarya</h2>
+                    <p class="mt-4 text-lg text-slate-300 max-w-3xl mx-auto scroll-reveal" style="transition-delay: 200ms;">Setiap karya kami lalui dengan 4 tahap utama yang teliti untuk memastikan kesempurnaan.</p>
+                </div>
+                <div class="grid lg:grid-cols-2 gap-16 items-start">
+                    <div class="lg:sticky top-28 scroll-reveal">
+                        <div class="rounded-xl overflow-hidden shadow-xl">
+                            <img id="process-image" src="https://placehold.co/800x800/1E293B/FFFFFF?text=1.+Konsultasi" alt="Proses Ethnik Art" class="w-full h-full object-cover transition-all duration-500">
+                        </div>
+                    </div>
+                    <div class="space-y-16">
+                        <div id="step-1" class="process-step scroll-reveal">
+                            <h3 class="text-2xl font-bold font-lora transition-colors duration-300">1. Konsultasi & Pengumpulan Cerita</h3>
+                            <p class="mt-3 text-slate-400">Semua dimulai dari cerita Anda. Anda mengirimkan foto-foto referensi dan menceritakan momen apa yang ingin diabadikan. Kami mendengarkan setiap detail untuk menangkap emosi yang tepat.</p>
+                        </div>
+                        <div id="step-2" class="process-step scroll-reveal">
+                            <h3 class="text-2xl font-bold font-lora transition-colors duration-300">2. Pematungan Digital 3D</h3>
+                            <p class="mt-3 text-slate-400">Seniman digital kami mulai "memahat" figur Anda di komputer. Setiap lekuk wajah, lipatan pakaian, dan postur tubuh dibuat dengan presisi tinggi hingga benar-benar mirip.</p>
+                        </div>
+                        <div id="step-3" class="process-step scroll-reveal">
+                            <h3 class="text-2xl font-bold font-lora transition-colors duration-300">3. Persetujuan Desain (Approval)</h3>
+                            <p class="mt-3 text-slate-400">Sebelum dicetak, kami akan mengirimkan hasil render 3D untuk Anda review. Di tahap ini Anda bisa memberikan masukan. Kami tidak akan melanjutkan sebelum Anda 100% puas.</p>
+                        </div>
+                         <div id="step-4" class="process-step scroll-reveal">
+                            <h3 class="text-2xl font-bold font-lora transition-colors duration-300">4. Cetak & Lukis Tangan</h3>
+                            <p class="mt-3 text-slate-400">Figur dicetak dengan printer resin 8K, kemudian setiap detailnya dilukis dengan tangan menggunakan kuas dan cat premium. Inilah tahap di mana karya seni Anda benar-benar menjadi hidup.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-        <button id="lightbox-close" class="absolute top-4 right-4 text-white text-4xl hover:text-stone-300">&times;</button>
-    </div>
+        </section>
+
+        <section id="galeri" class="py-20 bg-slate-900">
+             </section>
+
+        <section id="testimoni" class="py-20 bg-slate-800">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-white font-lora scroll-reveal">Kisah di Balik Setiap Karya</h2>
+                    <p class="mt-4 text-lg text-slate-300 scroll-reveal" style="transition-delay: 200ms;">Kepuasan Anda adalah penghargaan tertinggi bagi kami.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-slate-900 p-8 rounded-xl shadow-lg scroll-reveal">
+                        <p class="text-slate-300">"Luar biasa! Miniaturnya mirip sekali dengan kami di hari pernikahan. Semua tamu yang lihat sampai kagum. Terima kasih Ethnik Art sudah membuat kenangan kami abadi."</p>
+                        <div class="mt-6 font-semibold text-white">- Rian & Aulia, <span class="font-normal text-slate-400">Pasangan Pengantin, Pati</span></div>
+                    </div>
+                    <div class="bg-slate-900 p-8 rounded-xl shadow-lg scroll-reveal" style="transition-delay: 150ms;">
+                        <p class="text-slate-300">"Saya memesan miniatur ini sebagai hadiah anniversary ke-30 untuk orang tua. Reaksi mereka saat melihatnya... tak ternilai. Mereka terharu melihat miniatur diri mereka 30 tahun lalu."</p>
+                        <div class="mt-6 font-semibold text-white">- Budi Hartono, <span class="font-normal text-slate-400">Wiraswasta, Kudus</span></div>
+                    </div>
+                     <div class="bg-slate-900 p-8 rounded-xl shadow-lg scroll-reveal" style="transition-delay: 300ms;">
+                        <p class="text-slate-300">"Prosesnya sangat profesional. Saya selalu diberi update dan dilibatkan dalam tahap approval desain. Hasil akhirnya benar-benar melebihi ekspektasi. Sangat direkomendasikan."</p>
+                        <div class="mt-6 font-semibold text-white">- Dr. Santi, <span class="font-normal text-slate-400">Hadiah Personal, Jepara</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="kontak" class="py-20 bg-white text-stone-800">
+            <div class="max-w-4xl mx-auto px-6 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold font-lora scroll-reveal">Wujudkan Kenangan Abadi Anda</h2>
+                <p class="mt-4 text-lg text-stone-600 leading-relaxed max-w-2xl mx-auto scroll-reveal" style="transition-delay: 200ms;">
+                    Siap mengubah momen berharga Anda menjadi sebuah mahakarya? Prosesnya mudah, ikuti 3 langkah sederhana di bawah ini.
+                </p>
+                <div class="mt-12 text-left grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="scroll-reveal">
+                        <p class="text-4xl font-bold gold-accent">01.</p>
+                        <h3 class="mt-2 text-xl font-semibold">Konsultasi Awal</h3>
+                        <p class="mt-2 text-stone-600">Klik tombol WhatsApp di bawah untuk mengobrol santai dengan kami. Ceritakan ide Anda, kirimkan foto, dan kami akan memberikan estimasi harga dan waktu.</p>
+                    </div>
+                    <div class="scroll-reveal" style="transition-delay: 150ms;">
+                        <p class="text-4xl font-bold gold-accent">02.</p>
+                        <h3 class="mt-2 text-xl font-semibold">Konfirmasi & DP</h3>
+                        <p class="mt-2 text-stone-600">Setelah desain awal dan harga disepakati, Anda bisa melakukan pembayaran DP untuk mengamankan slot produksi Anda. Lalu, proses kreasi pun dimulai!</p>
+                    </div>
+                     <div class="scroll-reveal" style="transition-delay: 300ms;">
+                        <p class="text-4xl font-bold gold-accent">03.</p>
+                        <h3 class="mt-2 text-xl font-semibold">Proses & Pengiriman</h3>
+                        <p class="mt-2 text-stone-600">Kami akan mulai berkarya sambil memberi Anda update. Setelah selesai dan dilunasi, mahakarya Anda akan kami kirimkan dengan kemasan aman ke alamat Anda.</p>
+                    </div>
+                </div>
+                <div class="mt-12 scroll-reveal">
+                    <a href="https://wa.me/6281234567890?text=Halo%20Ethnik%20Art,%20saya%20tertarik%20untuk%20berkonsultasi%20mengenai%20pembuatan%20miniatur." target="_blank" class="inline-block bg-green-600 text-white font-semibold px-10 py-4 rounded-lg shadow-lg hover:bg-green-700 transition-transform transform hover:scale-105">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 inline-block mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
+                        Hubungi Kami via WhatsApp
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
     
     <script>
     document.addEventListener('DOMContentLoaded', () => {
@@ -110,50 +177,47 @@
         const header = document.getElementById('main-header');
         window.addEventListener('scroll', () => {
             if (window.scrollY > 50) {
-                header.classList.add('bg-white/90', 'shadow-md', 'backdrop-blur-lg');
+                header.classList.add('bg-slate-900/80', 'shadow-lg', 'backdrop-blur-lg');
             } else {
-                header.classList.remove('bg-white/90', 'shadow-md', 'backdrop-blur-lg');
+                header.classList.remove('bg-slate-900/80', 'shadow-lg', 'backdrop-blur-lg');
             }
         });
 
         // Skrip untuk Animasi saat Scroll
-        const observer = new IntersectionObserver((entries) => {
+        const scrollObserver = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
                     entry.target.classList.add('is-visible');
-                    observer.unobserve(entry.target);
+                    scrollObserver.unobserve(entry.target);
                 }
             });
         }, { threshold: 0.1 });
-        document.querySelectorAll('.scroll-reveal').forEach(el => observer.observe(el));
+        document.querySelectorAll('.scroll-reveal').forEach(el => scrollObserver.observe(el));
 
-        // Skrip untuk Galeri Lightbox
-        const lightbox = document.getElementById('lightbox');
-        if (lightbox) {
-            const lightboxContent = document.getElementById('lightbox-content');
-            const lightboxImg = document.getElementById('lightbox-img');
-            const lightboxTitle = document.getElementById('lightbox-title');
-            const lightboxDesc = document.getElementById('lightbox-desc');
-            const lightboxClose = document.getElementById('lightbox-close');
-            
-            document.querySelectorAll('.gallery-item').forEach(item => {
-                item.addEventListener('click', () => {
-                    lightboxImg.src = item.querySelector('img').src;
-                    lightboxTitle.textContent = item.querySelector('.gallery-title').textContent;
-                    lightboxDesc.textContent = item.querySelector('.gallery-desc').textContent;
-                    lightbox.classList.remove('hidden');
-                    setTimeout(() => { lightbox.classList.add('opacity-100'); lightboxContent.classList.add('scale-100'); }, 10);
-                });
+        // Skrip untuk Simulasi Proses Interaktif
+        const processImage = document.getElementById('process-image');
+        const processSteps = document.querySelectorAll('.process-step');
+        const imageSources = [
+            'https://placehold.co/800x800/1E293B/FFFFFF?text=1.+Konsultasi',
+            'https://placehold.co/800x800/2A3B4C/FFFFFF?text=2.+Sculpting+3D',
+            'https://placehold.co/800x800/3C4F6E/FFFFFF?text=3.+Approval+Desain',
+            'https://placehold.co/800x800/4F628E/FFFFFF?text=4.+Pengecatan'
+        ];
+
+        const processObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const stepIndex = Array.from(processSteps).indexOf(entry.target);
+                    if (processImage) {
+                       processImage.src = imageSources[stepIndex];
+                    }
+                    processSteps.forEach(step => step.classList.remove('active'));
+                    entry.target.classList.add('active');
+                }
             });
+        }, { threshold: 0.6 }); // Trigger saat 60% step terlihat
 
-            function closeLightbox() {
-                lightbox.classList.remove('opacity-100');
-                lightboxContent.classList.remove('scale-100');
-                setTimeout(() => { lightbox.classList.add('hidden'); }, 300);
-            }
-            lightboxClose.addEventListener('click', closeLightbox);
-            lightbox.addEventListener('click', (e) => { if (e.target === lightbox) closeLightbox(); });
-        }
+        processSteps.forEach(step => processObserver.observe(step));
     });
     </script>
 </body>
